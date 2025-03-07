@@ -1,0 +1,62 @@
+:root {
+    --text-color: white;
+}
+
+body {
+  background-color: black;
+}
+
+#root {
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.app {
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.input-container input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    flex: 1;
+}
+
+.input-container button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    color: var(--text-color);
+}
+
+.task-list button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
