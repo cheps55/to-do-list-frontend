@@ -6,7 +6,7 @@ import { usePostRequest } from "./hooks/usePostRequest";
 function App() {
     const [tasks, setTasks] = useState<string[]>([]);
     const [newTask, setNewTask] = useState("");
-    const { loading, error, httpPost } = usePostRequest();
+    const { httpPost } = usePostRequest();
 
     const addTask = async () => {
         if (newTask.trim()) {
